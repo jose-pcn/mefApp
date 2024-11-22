@@ -35,4 +35,5 @@ def main(page: ft.Page):
 
     rectangle =ft.Container()
 # Executando a aplicação
+print("Teste commit")
 ft.app(target=main)
