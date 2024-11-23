@@ -26,14 +26,14 @@ def main(page: ft.Page):
             controls=[
                 ft.Row(
                     controls=[rectangle],
-                    alignment=ft.MainAxisAlignment.END
+                    alignment=ft.MainAxisAlignment.CENTER
                 )
             ],
             alignment=ft.MainAxisAlignment.CENTER
         )
     )
 
-    rectangle =ft.Container()
+   print("Olá")
+
 # Executando a aplicação
-print("Teste commit")
 ft.app(target=main)
