@@ -21,6 +21,7 @@ def main(page: ft.Page):
     # Aplicando a fonte Roboto em toda a página
     page.theme = ft.Theme(font_family="Roboto_regular")
 
+    # MENU
     # Adicionando a logo
     imagem_logo = ft.Image(
         src="assets/images/logo.png",
@@ -28,15 +29,33 @@ def main(page: ft.Page):
         height=300,
         fit=ft.ImageFit.CONTAIN,
     )
+    # Botão de criar novo arquivo
 
-    # Retângulo (container) do menu
+    botao_criar_projeto = ft.ElevatedButton(
+        "CRIAR PROJETO",
+        color=cores.BRANCO,
+        bgcolor=cores.AZUL_MARINHO_ESCURO,
+        style=ft.ButtonStyle(
+            shape=ft.RoundedRectangleBorder(radius=10),
+            padding=ft.padding.all(10),
+            elevation=5,
+            text_style=ft.TextStyle(font_family="Roboto_regular", size=18),
+        )
+    )
+
+    #Container geral
     rectangle_menu = ft.Container(
         width=450,
         height=630,
         bgcolor="white",
         border_radius=20,
         alignment=ft.alignment.top_center,
-        content=ft.Text("PROJETOS", size=30, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_black"),  # Fonte aplicada corretamente
+        content=ft.Column(
+            controls=[
+                ft.Text("PROJETOS", size=30, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_black"),
+                botao_criar_projeto
+            ]
+        )
     )
 
     # Colocando a imagem e o container lado a lado em um Row
