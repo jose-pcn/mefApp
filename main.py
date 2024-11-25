@@ -10,30 +10,32 @@ def main(page: ft.Page):
     # Aplicando a fonte Roboto em toda a página
     page.font_family = "Roboto"
 
-    # Dividindo a tela
-    rectangle = ft.Container(
+    # Adicionando a logo
+    imagem_logo = ft.Image(
+        src="assets/images/logo.png",
+        width=300,
+        height=300,
+        fit=ft.ImageFit.CONTAIN,
+    )
+
+    # Retângulo (container) do menu
+    rectangle_menu = ft.Container(
         width=475,
         height=630,
         bgcolor="white",
         border_radius=20,
-        alignment=ft.alignment.top_center,
-        content=ft.Text("Projeto", size=18, color="black")
+        alignment=ft.alignment.center,
+        content=ft.Text("Projeto", size=18, color="black"),
     )
 
-    # Adicionando o retângulo à janela
+    # Colocando a imagem e o container lado a lado em um Row
     page.add(
-        ft.Column(
-            controls=[
-                ft.Row(
-                    controls=[rectangle],
-                    alignment=ft.MainAxisAlignment.CENTER
-                )
-            ],
-            alignment=ft.MainAxisAlignment.CENTER
+        ft.Row(
+            controls=[imagem_logo, rectangle_menu],
+            alignment=ft.MainAxisAlignment.SPACE_BETWEEN,  # Ajusta o espaçamento entre os itens
+            vertical_alignment=ft.CrossAxisAlignment.CENTER,  # Centraliza os itens verticalmente
         )
     )
-
-   print("Olá")
 
 # Executando a aplicação
 ft.app(target=main)
