@@ -1,72 +1,30 @@
 import flet as ft
-from assets import cores
+from pages.home_page import home_page
+from pages.create_project import create_project
+
 
 def main(page: ft.Page):
-    page.title = "Método dos Elementos Finitos"
-    page.window.width = 950
-    page.window.height = 700
-    page.window.resizable = False
-    page.window.maximizable = False
-    page.bgcolor = cores.AZUL_MARINHO_ESCURO
-    page.vertical_alignment = ft.MainAxisAlignment.CENTER
-    page.horizontal_alignment = ft.MainAxisAlignment.CENTER
-    page.window.center()
+    # Função chamada ao mudar a rota
+    def route_change(e):
+        page.views.clear()
 
-    # Registre a fonte antes de aplicá-la no tema
-    page.fonts = {
-        "Roboto_regular": "./assets/fonts/Roboto-Regular.ttf",
-        "Roboto_black": "./assets/fonts/Roboto-Black.ttf"
-    }
+        # Rota inicial ("/")
+        if page.route == "/":
+            home_page(page)
 
-    # Aplicando a fonte Roboto em toda a página
-    page.theme = ft.Theme(font_family="Roboto_regular")
+        # Rota para criação de projeto
+        elif page.route == "/create_project":
+            create_project(page)
 
-    # MENU
-    # Adicionando a logo
-    imagem_logo = ft.Image(
-        src="assets/images/logo.png",
-        width=300,
-        height=300,
-        fit=ft.ImageFit.CONTAIN,
-    )
-    # Botão de criar novo arquivo
+        # Atualizar a exibição da página
+        page.update()
 
-    botao_criar_projeto = ft.ElevatedButton(
-        "CRIAR PROJETO",
-        color=cores.BRANCO,
-        bgcolor=cores.AZUL_MARINHO_ESCURO,
-        style=ft.ButtonStyle(
-            shape=ft.RoundedRectangleBorder(radius=10),
-            padding=ft.padding.all(10),
-            elevation=5,
-            text_style=ft.TextStyle(font_family="Roboto_regular", size=18),
-        )
-    )
+    # Configuração do evento de mudança de rota
+    page.on_route_change = route_change
 
-    #Container geral
-    rectangle_menu = ft.Container(
-        width=450,
-        height=630,
-        bgcolor="white",
-        border_radius=20,
-        alignment=ft.alignment.top_center,
-        content=ft.Column(
-            controls=[
-                ft.Text("PROJETOS", size=30, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_black"),
-                botao_criar_projeto
-            ]
-        )
-    )
+    # Navegar para a rota atual (ou padrão)
+    page.go(page.route)
 
-    # Colocando a imagem e o container lado a lado em um Row
-    page.add(
-        ft.Row(
-            controls=[imagem_logo, rectangle_menu],
-            alignment=ft.MainAxisAlignment.CENTER,
-            vertical_alignment=ft.CrossAxisAlignment.CENTER,
-            spacing=100,
-        )
-    )
 
-# Executando a aplicação
+# Executar a aplicação
 ft.app(target=main)
