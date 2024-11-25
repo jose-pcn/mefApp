@@ -28,10 +28,5 @@ def create_project(page: ft.Page):
         )
     )
 
-    # Configurando propriedades gerais da página (se necessário)
-    page.title = "Método dos Elementos Finitos"
-    page.bgcolor = cores.AZUL_MARINHO_ESCURO
-    page.window.center()
-
     # Atualizando a página
     page.update()

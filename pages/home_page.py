@@ -8,7 +8,7 @@ def home_page(page: ft.Page):
     page.window.height = 700
     page.window.resizable = False
     page.window.maximizable = False
-    page.bgcolor = cores.AZUL_MARINHO_ESCURO
+    page.bgcolor= cores.AZUL_MARINHO_ESCURO
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.MainAxisAlignment.CENTER
     page.window.center()
@@ -25,7 +25,7 @@ def home_page(page: ft.Page):
     # MENU
     # Adicionando a logo
     imagem_logo = ft.Image(
-        src="../assets/images/logo.png",
+        src="./assets/images/logo.png",
         width=300,
         height=300,
         fit=ft.ImageFit.CONTAIN,

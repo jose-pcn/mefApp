@@ -2,12 +2,11 @@ import flet as ft
 from pages.home_page import home_page
 from pages.create_project import create_project
 
-
 def main(page: ft.Page):
     # Função chamada ao mudar a rota
     def route_change(e):
-        page.views.clear()
 
+        page.views.clear()
         # Rota inicial ("/")
         if page.route == "/":
             home_page(page)
@@ -24,7 +23,6 @@ def main(page: ft.Page):
 
     # Navegar para a rota atual (ou padrão)
     page.go(page.route)
-
 
 # Executar a aplicação
 ft.app(target=main)
