@@ -36,7 +36,7 @@ def main(page: ft.Page):
         bgcolor="white",
         border_radius=20,
         alignment=ft.alignment.top_center,
-        content=ft.Text("PROJETOS", size=30, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_black"),
+        content=ft.Text("PROJETOS", size=30, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_black"),  # Fonte aplicada corretamente
     )
 
     # Colocando a imagem e o container lado a lado em um Row
