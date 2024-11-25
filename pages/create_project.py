@@ -18,7 +18,7 @@ def create_project(page: ft.Page):
                     border_radius=20,
                     alignment=ft.alignment.top_center,
                     content=ft.Text(
-                        "PROJETOS",
+                        "PROJETO",
                         size=30,
                         color=cores.AZUL_MARINHO_ESCURO,
                         font_family="Roboto_black"

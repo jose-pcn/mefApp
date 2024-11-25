@@ -67,7 +67,8 @@ def home_page(page: ft.Page):
     # Colocando a imagem e o container lado a lado em um Row
     page.views.append(
         ft.View(
-            route="/",  # Rota associada à view
+            route="/",
+            bgcolor=cores.AZUL_MARINHO_ESCURO, # Rota associada à view
             controls=[
                 ft.Row(
                     controls=[imagem_logo, rectangle_menu],
