@@ -10,6 +10,7 @@ def create_project(page: ft.Page):
     page.views.append(
         ft.View(
             "/create_project",
+            bgcolor=cores.AZUL_MARINHO_ESCURO,
             controls=[
                 ft.Container(
                     width=450,

@@ -8,11 +8,6 @@ def home_page(page: ft.Page):
     page.window.height = 700
     page.window.resizable = False
     page.window.maximizable = False
-    try:
-        page.bgcolor = cores.AZUL_MARINHO_ESCURO
-        print(f"Cor de fundo definida: {page.bgcolor}")
-    except AttributeError as e:
-        print(f"Erro ao definir a cor de fundo: {e}")
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.MainAxisAlignment.CENTER
     page.window.center()
@@ -68,7 +63,7 @@ def home_page(page: ft.Page):
     page.views.append(
         ft.View(
             route="/",
-            bgcolor=cores.AZUL_MARINHO_ESCURO, # Rota associada à view
+            bgcolor=cores.AZUL_MARINHO_ESCURO,
             controls=[
                 ft.Row(
                     controls=[imagem_logo, rectangle_menu],
