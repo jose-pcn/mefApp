@@ -27,5 +27,5 @@ Este projeto está em desenvolvimento e tem como objetivo criar uma interface gr
 
 1. Clone este repositório:
    ```bash
-   git clone <URL-do-repositorio>
+   git clone https://github.com/jose-pcn/mefApp
    cd <diretório-do-projeto>
