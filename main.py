@@ -1,6 +1,10 @@
 import flet as ft
 from pages.home_page import home_page
 from pages.create_project import create_project
+from pages.geometria_propriedades import criar_geometria
+from pages.apoios import criar_apoios
+from pages.carregamentos import criar_carregamentos
+from pages.esforcos import criar_esforcos
 
 def main(page: ft.Page):
     # Função chamada ao mudar a rota
@@ -15,7 +19,18 @@ def main(page: ft.Page):
         elif page.route == "/create_project":
             create_project(page)
 
+        elif page.route == "/pagina_geometria":
+            criar_geometria(page)
+
+        elif page.route == "/pagina_apoios":
+            criar_apoios(page)
+
+        elif page.route == "/pagina_carregamentos":
+            criar_carregamentos(page)
         # Atualizar a exibição da página
+
+        elif page.route == "/pagina_esforcos":
+            criar_esforcos(page)
         page.update()
 
     # Configuração do evento de mudança de rota
