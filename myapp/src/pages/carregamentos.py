@@ -1,8 +1,6 @@
 import flet as ft
 from assets import cores
 from configs import button_configs
-import csv
-import os
 
 
 def criar_carregamentos(page: ft.Page):
@@ -10,12 +8,12 @@ def criar_carregamentos(page: ft.Page):
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
-    caixa_tipo_carregamento = ft.Dropdown(label="Tipo de apoio", width=200, height=50, options=[
+    caixa_tipo_carregamento = ft.Dropdown(label="Tipo de carregamento", width=200, height=50, options=[
         ft.dropdown.Option("Concentrado"),
         ft.dropdown.Option("Distribuído")
     ])
     caixa_coordenadas_carregamento = ft.TextField(label="(x, y)", width=200, height=50,
-                                     border_color=cores.AZUL_MARINHO_ESCURO)
+                                                  border_color=cores.AZUL_MARINHO_ESCURO)
     caixa_intensidade_carregamento = ft.TextField(label="Intensidade", width=200, height=50,
                                                   border_color=cores.AZUL_MARINHO_ESCURO)
     botao_adicionar_carregamento = button_configs.criar_botao(texto="+", on_click=lambda _: print("Adicionado"))

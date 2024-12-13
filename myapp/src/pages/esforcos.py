@@ -1,8 +1,6 @@
 import flet as ft
 from assets import cores
 from configs import button_configs
-import csv
-import os
 
 
 def criar_esforcos(page: ft.Page):

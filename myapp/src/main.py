@@ -6,6 +6,12 @@ from pages.apoios import criar_apoios
 from pages.carregamentos import criar_carregamentos
 from pages.esforcos import criar_esforcos
 
+import sys
+import os
+
+# Adicionar o diretório raiz ao caminho
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 def main(page: ft.Page):
     # Função chamada ao mudar a rota
     def route_change(e):

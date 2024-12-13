@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4046689-8c93-4b07-9be7-4e0e31109cdd" name="Changes" comment="Todas as páginas. Ver como adicionar mais elementos em uma página.">
+      <change afterPath="$PROJECT_DIR$/myapp/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mefApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/.idea/mefApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cores.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/assets/cores.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/assets/fonts/Roboto-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/assets/fonts/Roboto-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/button_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/configs/button_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.csv" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/data/.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apoios.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/pages/apoios.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/carregamentos.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/pages/carregamentos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/create_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/pages/create_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/esforcos.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/pages/esforcos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/geometria_propriedades.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/pages/geometria_propriedades.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/pages/home_page.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jose-pcn&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jose-pcn/mefApp.git&quot;,
+    &quot;accountId&quot;: &quot;e2608c81-427b-412c-aa52-9b8e50e244b9&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2pCzIQergjBYqg4aD6UPUn2A5ZL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.MEF.executor": "Run",
+    "Python.button_configs.executor": "Run",
+    "Python.create_project.executor": "Run",
+    "Python.geometria_propriedades.executor": "Debug",
+    "Python.home_page.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/josep/PycharmProjects/mefApp",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josep\PycharmProjects\mefApp\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\josep\PycharmProjects\mefApp\myapp\src" />
+      <recent name="C:\Users\josep\PycharmProjects\mefApp\src" />
+      <recent name="C:\Users\josep\PycharmProjects\mefApp\myapp" />
+      <recent name="C:\Users\josep\PycharmProjects\mefApp" />
+      <recent name="C:\Users\josep\PycharmProjects\mefApp\views" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4046689-8c93-4b07-9be7-4e0e31109cdd" name="Changes" comment="" />
+      <created>1732284764480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732284764480</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commit Inicial">
+      <option name="closed" value="true" />
+      <created>1732287451236</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732287451236</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit Inicial">
+      <option name="closed" value="true" />
+      <created>1732288166326</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732288166326</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit Inicial">
+      <option name="closed" value="true" />
+      <created>1732288260071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732288260071</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732288392425</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732288392425</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732288453980</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732288453980</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732375139533</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732375139533</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732543800840</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732543800840</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732547871055</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732547871055</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732547894219</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732547894219</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732549990592</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732549990592</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732566803626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732566803626</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732572288290</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732572288290</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Commit Teste GitHub">
+      <option name="closed" value="true" />
+      <created>1732573864153</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732573864153</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fundo azul corrigido.">
+      <option name="closed" value="true" />
+      <created>1732574466010</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732574466010</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fundo azul corrigido.">
+      <option name="closed" value="true" />
+      <created>1732581758407</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1732581758407</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Problema de centralização no fundo branco no arquivo create_project.py">
+      <option name="closed" value="true" />
+      <created>1732718997645</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732718997645</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fazer uma correção no hover.">
+      <option name="closed" value="true" />
+      <created>1732805025278</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732805025278</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Todas as páginas. Ver como adicionar mais elementos em uma página.">
+      <option name="closed" value="true" />
+      <created>1733921947786</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1733921947786</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Teste" />
+    <MESSAGE value="Commit Teste" />
+    <MESSAGE value="Commit Teste GitHub" />
+    <MESSAGE value="Fundo azul corrigido." />
+    <MESSAGE value="Problema de centralização no fundo branco no arquivo create_project.py" />
+    <MESSAGE value="Fazer uma correção no hover." />
+    <MESSAGE value="Todas as páginas. Ver como adicionar mais elementos em uma página." />
+    <option name="LAST_COMMIT_MESSAGE" value="Todas as páginas. Ver como adicionar mais elementos em uma página." />
+  </component>
+</project>
