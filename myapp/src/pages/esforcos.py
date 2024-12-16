@@ -20,7 +20,8 @@ def criar_esforcos(page: ft.Page):
         content=ft.Column(
             spacing=40,
             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-            controls=[botao_voltar]
+            controls=[ft.Text("O deslocamento no nó...", size=15, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_normal"),
+                botao_voltar]
         )
     )
 
