@@ -34,3 +34,10 @@ Para instalar a biblioteca **Flet**, use o seguinte comando:
 
 ```bash
 pip install flet
+```
+### Como clonar o repositório
+
+Para clonar o repositório, use o seguinte comando:
+
+```bash
+git clone https://github.com/jose-pcn/mefApp.git
