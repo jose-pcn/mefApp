@@ -12,6 +12,7 @@ import os
 # Adicionar o diretório raiz ao caminho | Não tenho muita certeza de porque precisa.
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+
 def main(page: ft.Page):
     """
     Função principal da aplicação.
