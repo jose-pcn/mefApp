@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte da avaliação da disciplina **Introdu�
 
 ## Logo do Projeto
 
-![Logo](src/assets/images/logo.png)
+![Logo](myapp/src/assets/images/logo.png)
 
 ## Funcionalidades
 
