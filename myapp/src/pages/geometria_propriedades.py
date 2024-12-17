@@ -1,13 +1,24 @@
 import flet as ft
-from assets import cores
-from configs import button_configs
+from src.assets import cores
+from src.configs import button_configs
 
 
 def subscript_number(n: int) -> str:
+    """
+    Função que converte um número inteiro em uma string com os dígitos em formato de subscrito.
+    :param n:
+    :return:
+    """
     subscripts = "₀₁₂₃₄₅₆₇₈₉"
     return ''.join(subscripts[int(digit)] for digit in str(n))
 
+
 def criar_campo_geometria(n: int):
+    """
+    Função que cria um campo para inserção de dados de um elemento.
+    :param n:
+    :return:
+    """
     n_sub = subscript_number(n)
     n_sub_pos = subscript_number(n + 1)
     return [
@@ -27,32 +38,48 @@ def criar_campo_geometria(n: int):
     ]
 
 
-coluna_propriedades_geometricas = criar_campo_geometria(1)
+indice = 1
+lista_propriedades_geometricas = []
+lista_propriedades_geometricas.extend(criar_campo_geometria(indice))
 
 
-def adicionar_elemento(evento):
-    novo_indice = (len(coluna_propriedades_geometricas) // 2) + 1  # Calcula o próximo índice corretamente
-    novos_campos = criar_campo_geometria(novo_indice)
-
-    # Localize o container principal e adicione os novos campos diretamente
-    container_principal = evento.control  # Assume que o botão é o evento acionador
-    while not isinstance(container_principal, ft.Container):
-        container_principal = container_principal.parent  # Navega para o container pai
-
-    # Adiciona os novos controles à lista do container
-    if isinstance(container_principal.content, ft.Column):
-        container_principal.content.controls[-2:-2] = novos_campos  # Insere antes do botão de CONTINUAR
-
-    container_principal.update()  # Atualiza o container com as novas alterações
+def adicionar_elemento(page):
+    """
+    Função que adiciona um novo elemento à lista de elementos.
+    :param page:
+    :return:
+    """
+    page.scroll = True
+    global indice
+    indice += 1
+    lista_propriedades_geometricas.extend(criar_campo_geometria(indice))
+    # Atualizando a interface.
+    botao_adicionar_elemento = button_configs.criar_botao(texto="+", on_click=lambda _: adicionar_elemento(page))
+    botao_voltar_home = button_configs.criar_botao(texto="VOLTAR", on_click=lambda _: page.go("/create_project"))
+    botao_continuar = button_configs.criar_botao(texto="CONTINUAR", on_click=lambda _: page.go("/pagina_apoios"))
+    page.views[-1].controls[0].content.controls = [
+        ft.Text("GEOMETRIA E PROPRIEDADES", size=30, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_black"),
+        *lista_propriedades_geometricas,
+        botao_adicionar_elemento,
+        ft.Row(
+            alignment=ft.MainAxisAlignment.CENTER,
+            controls=[botao_voltar_home, botao_continuar]
+        )
+    ]
+    page.update()
 
 
 def criar_geometria(page: ft.Page):
+    """
+    Função que cria a página de geometria e propriedades.
+    :param page:
+    :return:
+    """
     page.views.clear()
-    page.scroll=True
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
-    botao_adicionar_elemento = button_configs.criar_botao(texto="+", on_click=lambda _: adicionar_elemento)
+    botao_adicionar_elemento = button_configs.criar_botao(texto="+", on_click=lambda _: adicionar_elemento(page))
     botao_voltar_home = button_configs.criar_botao(texto="VOLTAR", on_click=lambda _: page.go("/create_project"))
     botao_continuar = button_configs.criar_botao(texto="CONTINUAR", on_click=lambda _: page.go("/pagina_apoios"))
 
@@ -66,9 +93,10 @@ def criar_geometria(page: ft.Page):
         content=ft.Column(
             spacing=40,
             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            scroll=ft.ScrollMode.AUTO,
             controls=[
                 ft.Text("GEOMETRIA E PROPRIEDADES", size=30, color=cores.AZUL_MARINHO_ESCURO, font_family="Roboto_black"),
-                *coluna_propriedades_geometricas,
+                *lista_propriedades_geometricas,
                 botao_adicionar_elemento,
                 ft.Row(
                     alignment=ft.MainAxisAlignment.CENTER,
@@ -78,7 +106,7 @@ def criar_geometria(page: ft.Page):
         )
     )
 
-    # Adicionando uma nova view
+
     page.views.append(
         ft.View(
             "/pagina_geometria",
@@ -89,5 +117,5 @@ def criar_geometria(page: ft.Page):
         )
     )
 
-    # Atualizando a página
+
     page.update()

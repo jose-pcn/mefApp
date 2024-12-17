@@ -2,19 +2,25 @@ import flet as ft
 from pages.home_page import home_page
 from pages.create_project import create_project
 from pages.geometria_propriedades import criar_geometria
-from pages.apoios import criar_apoios
+from pages.apoios import aplicar_campo_apoios
 from pages.carregamentos import criar_carregamentos
 from pages.esforcos import criar_esforcos
 
 import sys
 import os
 
-# Adicionar o diretório raiz ao caminho
+# Adicionar o diretório raiz ao caminho | Não tenho muita certeza de porque precisa.
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 def main(page: ft.Page):
+    """
+    Função principal da aplicação.
+    Função que define os caminhos de rotas
+    :param page:
+    :return:
+    """
     # Função chamada ao mudar a rota
-    def route_change(e):
+    def route_change(_):
 
         page.views.clear()
         # Rota inicial ("/")
@@ -29,7 +35,7 @@ def main(page: ft.Page):
             criar_geometria(page)
 
         elif page.route == "/pagina_apoios":
-            criar_apoios(page)
+            aplicar_campo_apoios(page)
 
         elif page.route == "/pagina_carregamentos":
             criar_carregamentos(page)

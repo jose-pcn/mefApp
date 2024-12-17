@@ -1,6 +1,6 @@
 import flet as ft
-from assets import cores
-from configs import button_configs
+from src.assets import cores
+from src.configs import button_configs
 
 
 def criar_carregamentos(page: ft.Page):
@@ -8,7 +8,7 @@ def criar_carregamentos(page: ft.Page):
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
-    caixa_tipo_carregamento = ft.Dropdown(label="Tipo de carregamento", width=200, height=50, options=[
+    caixa_tipo_carregamento = ft.Dropdown(label="Tipo de carregamento", width=225, height=50, options=[
         ft.dropdown.Option("Concentrado"),
         ft.dropdown.Option("Distribuído")
     ])
