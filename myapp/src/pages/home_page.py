@@ -1,5 +1,6 @@
 import flet as ft
-from assets import cores
+from src.assets import cores
+
 
 def home_page(page: ft.Page):
     # Configurações gerais da página
